@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="157b1688-af62-4f9b-a107-06ff3661ac7d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/store/db.clj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project.clj" beforeDir="false" afterPath="$PROJECT_DIR$/project.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/core.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/core.clj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +51,7 @@
       <recent name="$PROJECT_DIR$/src/store" />
     </key>
   </component>
-  <component name="ReplState" timestamp="1583197490765">{:repl-history {:ide [], :local [], :remote []}}</component>
+  <component name="ReplState" timestamp="1583200510712">{:repl-history {:ide [], :local [{:command &quot;(open-connection )&quot;, :offset 18, :ns &quot;store.db&quot;} {:command &quot;(open-connection)&quot;, :offset 17, :ns &quot;store.db&quot;} {:command &quot;(pprint (d/create-database db-uri))&quot;, :offset 35, :ns &quot;store.db&quot;} {:command &quot;(println db-uri         )&quot;, :offset 25, :ns &quot;store.core&quot;} {:command &quot;(require 'store.db)\n&quot;, :offset 19, :ns &quot;store.core&quot;} {:command &quot;(println db-uri)&quot;, :offset 16, :ns &quot;store.core&quot;} {:command &quot;(require store.db)\n&quot;, :offset 18, :ns &quot;store.core&quot;}], :remote []}}</component>
   <component name="RunManager" selected="Clojure REPL.REPL for store">
     <configuration name="REPL for store" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false" temporary="true">
       <module name="store" />
@@ -121,30 +123,30 @@
       <screen x="56" y="27" width="1864" height="1053" />
     </state>
     <state x="583" y="215" width="800" height="684" key="#Project_Structure/56.27.1864.1053@56.27.1864.1053" timestamp="1583195256134" />
-    <state x="459" y="99" width="1048" height="915" key="CommitChangelistDialog2" timestamp="1583110246166">
+    <state x="459" y="99" width="1048" height="915" key="CommitChangelistDialog2" timestamp="1583200561783">
       <screen x="56" y="27" width="1864" height="1053" />
     </state>
-    <state x="459" y="99" width="1048" height="915" key="CommitChangelistDialog2/56.27.1864.1053@56.27.1864.1053" timestamp="1583110246166" />
+    <state x="459" y="99" width="1048" height="915" key="CommitChangelistDialog2/56.27.1864.1053@56.27.1864.1053" timestamp="1583200561783" />
     <state x="771" y="311" width="424" height="491" key="FileChooserDialogImpl" timestamp="1583192474482">
       <screen x="56" y="27" width="1864" height="1053" />
     </state>
     <state x="771" y="311" width="424" height="491" key="FileChooserDialogImpl/56.27.1864.1053@56.27.1864.1053" timestamp="1583192474482" />
-    <state width="1818" height="275" key="GridCell.Tab.0.bottom" timestamp="1583196757752">
+    <state width="1818" height="275" key="GridCell.Tab.0.bottom" timestamp="1583200561843">
       <screen x="56" y="27" width="1864" height="1053" />
     </state>
-    <state width="1818" height="275" key="GridCell.Tab.0.bottom/56.27.1864.1053@56.27.1864.1053" timestamp="1583196757752" />
-    <state width="1818" height="275" key="GridCell.Tab.0.center" timestamp="1583196757751">
+    <state width="1818" height="275" key="GridCell.Tab.0.bottom/56.27.1864.1053@56.27.1864.1053" timestamp="1583200561843" />
+    <state width="1818" height="275" key="GridCell.Tab.0.center" timestamp="1583200561843">
       <screen x="56" y="27" width="1864" height="1053" />
     </state>
-    <state width="1818" height="275" key="GridCell.Tab.0.center/56.27.1864.1053@56.27.1864.1053" timestamp="1583196757751" />
-    <state width="1818" height="275" key="GridCell.Tab.0.left" timestamp="1583196757751">
+    <state width="1818" height="275" key="GridCell.Tab.0.center/56.27.1864.1053@56.27.1864.1053" timestamp="1583200561843" />
+    <state width="1818" height="275" key="GridCell.Tab.0.left" timestamp="1583200561843">
       <screen x="56" y="27" width="1864" height="1053" />
     </state>
-    <state width="1818" height="275" key="GridCell.Tab.0.left/56.27.1864.1053@56.27.1864.1053" timestamp="1583196757751" />
-    <state width="1818" height="275" key="GridCell.Tab.0.right" timestamp="1583196757752">
+    <state width="1818" height="275" key="GridCell.Tab.0.left/56.27.1864.1053@56.27.1864.1053" timestamp="1583200561843" />
+    <state width="1818" height="275" key="GridCell.Tab.0.right" timestamp="1583200561843">
       <screen x="56" y="27" width="1864" height="1053" />
     </state>
-    <state width="1818" height="275" key="GridCell.Tab.0.right/56.27.1864.1053@56.27.1864.1053" timestamp="1583196757752" />
+    <state width="1818" height="275" key="GridCell.Tab.0.right/56.27.1864.1053@56.27.1864.1053" timestamp="1583200561843" />
     <state x="477" y="188" width="1022" height="737" key="SettingsEditor" timestamp="1583192476983">
       <screen x="56" y="27" width="1864" height="1053" />
     </state>
@@ -157,9 +159,9 @@
       <screen x="56" y="27" width="1864" height="1053" />
     </state>
     <state x="297" y="280" width="1372" height="554" key="new project wizard/56.27.1864.1053@56.27.1864.1053" timestamp="1583197141389" />
-    <state x="579" y="259" width="816" height="678" key="search.everywhere.popup" timestamp="1583111156906">
+    <state x="579" y="259" width="816" height="678" key="search.everywhere.popup" timestamp="1583198338492">
       <screen x="56" y="27" width="1864" height="1053" />
     </state>
-    <state x="579" y="259" width="816" height="678" key="search.everywhere.popup/56.27.1864.1053@56.27.1864.1053" timestamp="1583111156906" />
+    <state x="579" y="259" width="816" height="678" key="search.everywhere.popup/56.27.1864.1053@56.27.1864.1053" timestamp="1583198338492" />
   </component>
 </project>

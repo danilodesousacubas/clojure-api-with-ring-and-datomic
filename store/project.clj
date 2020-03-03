@@ -2,7 +2,7 @@
   :description ""
   :url ""
   :min-lein-version "2.0.0"
-  :repositories {"my.datomic.com" {:url "https://my.datomic.com/repo"
+  :repositories {"my.datomic.com" {:url   "https://my.datomic.com/repo"
                                    :creds :gpg}}
   :dependencies [[org.clojure/clojure "1.10.0"]
                  [compojure "1.6.1"]
@@ -13,5 +13,4 @@
   :profiles
   {:dev {:dependencies [[javax.servlet/servlet-api "2.5"]
                         [ring/ring-mock "0.3.2"]]}}
-
-  :repl-options {:init-ns store.core})
+  :repl-options {:init-ns store.core })
