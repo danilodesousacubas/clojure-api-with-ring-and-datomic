@@ -13,4 +13,5 @@
   :profiles
   {:dev {:dependencies [[javax.servlet/servlet-api "2.5"]
                         [ring/ring-mock "0.3.2"]]}}
+
   :repl-options {:init-ns store.core})
