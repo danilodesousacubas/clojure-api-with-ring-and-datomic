@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="157b1688-af62-4f9b-a107-06ff3661ac7d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/core.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/core.clj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/db.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/db.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/model.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/model.clj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +49,7 @@
       <recent name="$PROJECT_DIR$/src/store" />
     </key>
   </component>
-  <component name="ReplState" timestamp="1583205098271">{:repl-history {:ide [], :local [{:command &quot;(open-connection )&quot;, :offset 18, :ns &quot;store.db&quot;} {:command &quot;(open-connection)&quot;, :offset 17, :ns &quot;store.db&quot;} {:command &quot;(pprint (d/create-database db-uri))&quot;, :offset 35, :ns &quot;store.db&quot;} {:command &quot;(println db-uri         )&quot;, :offset 25, :ns &quot;store.core&quot;} {:command &quot;(require 'store.db)\n&quot;, :offset 19, :ns &quot;store.core&quot;} {:command &quot;(println db-uri)&quot;, :offset 16, :ns &quot;store.core&quot;} {:command &quot;(require store.db)\n&quot;, :offset 18, :ns &quot;store.core&quot;} {:command &quot;(pprint (db/open-connection))&quot;, :offset 29, :ns &quot;store.core&quot;} {:command &quot;(d/create-database \&quot;datomic:dev//localhost:4334/hello\&quot;)&quot;, :offset 55, :ns &quot;store.db&quot;} {:command &quot;(d/create-database \&quot;datomic:dev//localhost:4334/store\&quot;)&quot;, :offset 55, :ns &quot;store.db&quot;} {:command &quot;(pprint (d/create-database \&quot;datomic:dev//localhost:4334/store\&quot;))&quot;, :offset 64, :ns &quot;store.db&quot;}], :remote []}}</component>
+  <component name="ReplState" timestamp="1583205395363">{:repl-history {:ide [], :local [{:command &quot;(open-connection )&quot;, :offset 18, :ns &quot;store.db&quot;} {:command &quot;(open-connection)&quot;, :offset 17, :ns &quot;store.db&quot;} {:command &quot;(pprint (d/create-database db-uri))&quot;, :offset 35, :ns &quot;store.db&quot;} {:command &quot;(println db-uri         )&quot;, :offset 25, :ns &quot;store.core&quot;} {:command &quot;(require 'store.db)\n&quot;, :offset 19, :ns &quot;store.core&quot;} {:command &quot;(println db-uri)&quot;, :offset 16, :ns &quot;store.core&quot;} {:command &quot;(require store.db)\n&quot;, :offset 18, :ns &quot;store.core&quot;} {:command &quot;(pprint (db/open-connection))&quot;, :offset 29, :ns &quot;store.core&quot;} {:command &quot;(d/create-database \&quot;datomic:dev//localhost:4334/hello\&quot;)&quot;, :offset 55, :ns &quot;store.db&quot;} {:command &quot;(d/create-database \&quot;datomic:dev//localhost:4334/store\&quot;)&quot;, :offset 55, :ns &quot;store.db&quot;} {:command &quot;(pprint (d/create-database \&quot;datomic:dev//localhost:4334/store\&quot;))&quot;, :offset 64, :ns &quot;store.db&quot;}], :remote []}}</component>
   <component name="RunManager" selected="Clojure REPL.REPL for store">
     <configuration name="REPL for store" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false" temporary="true">
       <module name="store" />
