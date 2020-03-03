@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="157b1688-af62-4f9b-a107-06ff3661ac7d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/store/db.clj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/model.clj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project.clj" beforeDir="false" afterPath="$PROJECT_DIR$/project.clj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/core.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/core.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/db.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/db.clj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +51,7 @@
       <recent name="$PROJECT_DIR$/src/store" />
     </key>
   </component>
-  <component name="ReplState" timestamp="1583200510712">{:repl-history {:ide [], :local [{:command &quot;(open-connection )&quot;, :offset 18, :ns &quot;store.db&quot;} {:command &quot;(open-connection)&quot;, :offset 17, :ns &quot;store.db&quot;} {:command &quot;(pprint (d/create-database db-uri))&quot;, :offset 35, :ns &quot;store.db&quot;} {:command &quot;(println db-uri         )&quot;, :offset 25, :ns &quot;store.core&quot;} {:command &quot;(require 'store.db)\n&quot;, :offset 19, :ns &quot;store.core&quot;} {:command &quot;(println db-uri)&quot;, :offset 16, :ns &quot;store.core&quot;} {:command &quot;(require store.db)\n&quot;, :offset 18, :ns &quot;store.core&quot;}], :remote []}}</component>
+  <component name="ReplState" timestamp="1583204931259">{:repl-history {:ide [], :local [{:command &quot;(open-connection )&quot;, :offset 18, :ns &quot;store.db&quot;} {:command &quot;(open-connection)&quot;, :offset 17, :ns &quot;store.db&quot;} {:command &quot;(pprint (d/create-database db-uri))&quot;, :offset 35, :ns &quot;store.db&quot;} {:command &quot;(println db-uri         )&quot;, :offset 25, :ns &quot;store.core&quot;} {:command &quot;(require 'store.db)\n&quot;, :offset 19, :ns &quot;store.core&quot;} {:command &quot;(println db-uri)&quot;, :offset 16, :ns &quot;store.core&quot;} {:command &quot;(require store.db)\n&quot;, :offset 18, :ns &quot;store.core&quot;} {:command &quot;(pprint (db/open-connection))&quot;, :offset 29, :ns &quot;store.core&quot;} {:command &quot;(d/create-database \&quot;datomic:dev//localhost:4334/hello\&quot;)&quot;, :offset 55, :ns &quot;store.db&quot;} {:command &quot;(d/create-database \&quot;datomic:dev//localhost:4334/store\&quot;)&quot;, :offset 55, :ns &quot;store.db&quot;} {:command &quot;(pprint (d/create-database \&quot;datomic:dev//localhost:4334/store\&quot;))&quot;, :offset 64, :ns &quot;store.db&quot;}], :remote []}}</component>
   <component name="RunManager" selected="Clojure REPL.REPL for store">
     <configuration name="REPL for store" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false" temporary="true">
       <module name="store" />
@@ -116,37 +116,49 @@
       <option name="presentableId" value="Default" />
       <updated>1583110132687</updated>
     </task>
+    <task id="LOCAL-00001" summary="Created function open-connection into store.db">
+      <created>1583200573156</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1583200573156</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Created function open-connection into store.db" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created function open-connection into store.db" />
   </component>
   <component name="WindowStateProjectService">
     <state x="583" y="215" width="800" height="684" key="#Project_Structure" timestamp="1583195256134">
       <screen x="56" y="27" width="1864" height="1053" />
     </state>
     <state x="583" y="215" width="800" height="684" key="#Project_Structure/56.27.1864.1053@56.27.1864.1053" timestamp="1583195256134" />
-    <state x="459" y="99" width="1048" height="915" key="CommitChangelistDialog2" timestamp="1583200561783">
+    <state x="459" y="99" width="1048" height="915" key="CommitChangelistDialog2" timestamp="1583200573103">
       <screen x="56" y="27" width="1864" height="1053" />
     </state>
-    <state x="459" y="99" width="1048" height="915" key="CommitChangelistDialog2/56.27.1864.1053@56.27.1864.1053" timestamp="1583200561783" />
+    <state x="459" y="99" width="1048" height="915" key="CommitChangelistDialog2/56.27.1864.1053@56.27.1864.1053" timestamp="1583200573103" />
     <state x="771" y="311" width="424" height="491" key="FileChooserDialogImpl" timestamp="1583192474482">
       <screen x="56" y="27" width="1864" height="1053" />
     </state>
     <state x="771" y="311" width="424" height="491" key="FileChooserDialogImpl/56.27.1864.1053@56.27.1864.1053" timestamp="1583192474482" />
-    <state width="1818" height="275" key="GridCell.Tab.0.bottom" timestamp="1583200561843">
+    <state width="1818" height="275" key="GridCell.Tab.0.bottom" timestamp="1583201065484">
       <screen x="56" y="27" width="1864" height="1053" />
     </state>
-    <state width="1818" height="275" key="GridCell.Tab.0.bottom/56.27.1864.1053@56.27.1864.1053" timestamp="1583200561843" />
-    <state width="1818" height="275" key="GridCell.Tab.0.center" timestamp="1583200561843">
+    <state width="1818" height="275" key="GridCell.Tab.0.bottom/56.27.1864.1053@56.27.1864.1053" timestamp="1583201065484" />
+    <state width="1818" height="275" key="GridCell.Tab.0.center" timestamp="1583201065484">
       <screen x="56" y="27" width="1864" height="1053" />
     </state>
-    <state width="1818" height="275" key="GridCell.Tab.0.center/56.27.1864.1053@56.27.1864.1053" timestamp="1583200561843" />
-    <state width="1818" height="275" key="GridCell.Tab.0.left" timestamp="1583200561843">
+    <state width="1818" height="275" key="GridCell.Tab.0.center/56.27.1864.1053@56.27.1864.1053" timestamp="1583201065484" />
+    <state width="1818" height="275" key="GridCell.Tab.0.left" timestamp="1583201065484">
       <screen x="56" y="27" width="1864" height="1053" />
     </state>
-    <state width="1818" height="275" key="GridCell.Tab.0.left/56.27.1864.1053@56.27.1864.1053" timestamp="1583200561843" />
-    <state width="1818" height="275" key="GridCell.Tab.0.right" timestamp="1583200561843">
+    <state width="1818" height="275" key="GridCell.Tab.0.left/56.27.1864.1053@56.27.1864.1053" timestamp="1583201065484" />
+    <state width="1818" height="275" key="GridCell.Tab.0.right" timestamp="1583201065484">
       <screen x="56" y="27" width="1864" height="1053" />
     </state>
-    <state width="1818" height="275" key="GridCell.Tab.0.right/56.27.1864.1053@56.27.1864.1053" timestamp="1583200561843" />
+    <state width="1818" height="275" key="GridCell.Tab.0.right/56.27.1864.1053@56.27.1864.1053" timestamp="1583201065484" />
     <state x="477" y="188" width="1022" height="737" key="SettingsEditor" timestamp="1583192476983">
       <screen x="56" y="27" width="1864" height="1053" />
     </state>
@@ -159,9 +171,9 @@
       <screen x="56" y="27" width="1864" height="1053" />
     </state>
     <state x="297" y="280" width="1372" height="554" key="new project wizard/56.27.1864.1053@56.27.1864.1053" timestamp="1583197141389" />
-    <state x="579" y="259" width="816" height="678" key="search.everywhere.popup" timestamp="1583198338492">
+    <state x="579" y="259" width="816" height="678" key="search.everywhere.popup" timestamp="1583204379450">
       <screen x="56" y="27" width="1864" height="1053" />
     </state>
-    <state x="579" y="259" width="816" height="678" key="search.everywhere.popup/56.27.1864.1053@56.27.1864.1053" timestamp="1583198338492" />
+    <state x="579" y="259" width="816" height="678" key="search.everywhere.popup/56.27.1864.1053@56.27.1864.1053" timestamp="1583204379450" />
   </component>
 </project>

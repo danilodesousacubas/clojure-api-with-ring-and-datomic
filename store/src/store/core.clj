@@ -3,5 +3,5 @@
   (:require [datomic.api :as d]
             [store.db :as db]))
 
-;(def conn (db/open-connection))
-;(pprint conn)
+(pprint (db/open))
+(def conn (db/open))

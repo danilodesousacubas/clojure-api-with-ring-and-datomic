@@ -2,15 +2,14 @@
   (:use clojure.pprint)
   (:require [datomic.api :as d]))
 
-(def db-uri "datomic:dev//localhost:4334/hello)")
+(def db-uri "datomic:dev://localhost:4334/store")
 
-(defn open-connection []
+(defn create []
+  (d/create-database db-uri))
+
+(defn open []
   (d/create-database db-uri)
   (d/connect db-uri))
 
-(defn delete-database []
+(defn delete []
   (d/delete-database db-uri))
-
-
-
-
