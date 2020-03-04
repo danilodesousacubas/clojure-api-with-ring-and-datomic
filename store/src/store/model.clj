@@ -4,5 +4,5 @@
 
 (defn create-store [name email cnpj]
   {:store/name name
-   store/email email
-   store/cnpj  cnpj})
+   :store/email email
+   :store/cnpj  cnpj})
