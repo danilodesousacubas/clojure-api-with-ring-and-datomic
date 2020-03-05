@@ -5,7 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/core.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/core.clj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/db.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/db.clj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/model.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/model.clj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +50,7 @@
       <recent name="$PROJECT_DIR$/src/store" />
     </key>
   </component>
-  <component name="ReplState" timestamp="1583322171420">{:repl-history {:ide [], :local [{:command &quot;(open-connection )&quot;, :offset 18, :ns &quot;store.db&quot;} {:command &quot;(open-connection)&quot;, :offset 17, :ns &quot;store.db&quot;} {:command &quot;(pprint (d/create-database db-uri))&quot;, :offset 35, :ns &quot;store.db&quot;} {:command &quot;(println db-uri         )&quot;, :offset 25, :ns &quot;store.core&quot;} {:command &quot;(require 'store.db)\n&quot;, :offset 19, :ns &quot;store.core&quot;} {:command &quot;(println db-uri)&quot;, :offset 16, :ns &quot;store.core&quot;} {:command &quot;(require store.db)\n&quot;, :offset 18, :ns &quot;store.core&quot;} {:command &quot;(pprint (db/open-connection))&quot;, :offset 29, :ns &quot;store.core&quot;} {:command &quot;(d/create-database \&quot;datomic:dev//localhost:4334/hello\&quot;)&quot;, :offset 55, :ns &quot;store.db&quot;} {:command &quot;(d/create-database \&quot;datomic:dev//localhost:4334/store\&quot;)&quot;, :offset 55, :ns &quot;store.db&quot;} {:command &quot;(pprint (d/create-database \&quot;datomic:dev//localhost:4334/store\&quot;))&quot;, :offset 64, :ns &quot;store.db&quot;}], :remote []}}</component>
+  <component name="ReplState" timestamp="1583413285969">{:repl-history {:ide [], :local [{:command &quot;(open-connection )&quot;, :offset 18, :ns &quot;store.db&quot;} {:command &quot;(open-connection)&quot;, :offset 17, :ns &quot;store.db&quot;} {:command &quot;(pprint (d/create-database db-uri))&quot;, :offset 35, :ns &quot;store.db&quot;} {:command &quot;(println db-uri         )&quot;, :offset 25, :ns &quot;store.core&quot;} {:command &quot;(require 'store.db)\n&quot;, :offset 19, :ns &quot;store.core&quot;} {:command &quot;(println db-uri)&quot;, :offset 16, :ns &quot;store.core&quot;} {:command &quot;(require store.db)\n&quot;, :offset 18, :ns &quot;store.core&quot;} {:command &quot;(pprint (db/open-connection))&quot;, :offset 29, :ns &quot;store.core&quot;} {:command &quot;(d/create-database \&quot;datomic:dev//localhost:4334/hello\&quot;)&quot;, :offset 55, :ns &quot;store.db&quot;} {:command &quot;(d/create-database \&quot;datomic:dev//localhost:4334/store\&quot;)&quot;, :offset 55, :ns &quot;store.db&quot;} {:command &quot;(pprint (d/create-database \&quot;datomic:dev//localhost:4334/store\&quot;))&quot;, :offset 64, :ns &quot;store.db&quot;} {:command &quot;(pprint (model/create-store \&quot;store1\&quot;, \&quot;store@gmail\&quot;  \&quot;cnpj\&quot;))&quot;, :offset 61, :ns &quot;store.core&quot;} {:command &quot;(d/transact conn db/schema)&quot;, :offset 27, :ns &quot;store.core&quot;} {:command &quot;(let [store (model/create-store \&quot;store1\&quot;, \&quot;store@gmail\&quot; \&quot;1234\&quot;)\n      store (model/create-store \&quot;store2\&quot;, \&quot;store2@gmail\&quot; \&quot;12345\&quot;)]\n  (d/transact conn [store]))&quot;, :offset 159, :ns &quot;store.core&quot;}], :remote []}}</component>
   <component name="RunManager" selected="Clojure REPL.REPL for store">
     <configuration name="REPL for store" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false" temporary="true">
       <module name="store" />
@@ -86,7 +85,19 @@
       <module name="" />
       <method v="2" />
     </configuration>
-    <configuration name="core" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
+    <configuration name="core" type="ClojureScriptRunConfiguration" factoryName="Clojure Script">
+      <module name="store" />
+      <setting name="path" value="$PROJECT_DIR$/src/store/core.clj" />
+      <setting name="namespace" value="" />
+      <setting name="execution" value="INTELLIJ" />
+      <setting name="profiles" value="" />
+      <setting name="aliases" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="$PROJECT_DIR$/src/store" />
+      <method v="2" />
+    </configuration>
+    <configuration name="store.core" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
       <module name="store" />
       <setting name="path" value="$PROJECT_DIR$/src/store/core.clj" />
       <setting name="namespace" value="" />
@@ -101,7 +112,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Clojure REPL.REPL for store" />
-        <item itemvalue="Clojure Application.core" />
+        <item itemvalue="Clojure Application.store.core" />
       </list>
     </recent_temporary>
   </component>
@@ -158,22 +169,22 @@
       <screen x="56" y="27" width="1864" height="1053" />
     </state>
     <state x="771" y="311" width="424" height="491" key="FileChooserDialogImpl/56.27.1864.1053@56.27.1864.1053" timestamp="1583192474482" />
-    <state width="1818" height="275" key="GridCell.Tab.0.bottom" timestamp="1583201065484">
+    <state width="1818" height="218" key="GridCell.Tab.0.bottom" timestamp="1583411572804">
       <screen x="56" y="27" width="1864" height="1053" />
     </state>
-    <state width="1818" height="275" key="GridCell.Tab.0.bottom/56.27.1864.1053@56.27.1864.1053" timestamp="1583201065484" />
-    <state width="1818" height="275" key="GridCell.Tab.0.center" timestamp="1583201065484">
+    <state width="1818" height="218" key="GridCell.Tab.0.bottom/56.27.1864.1053@56.27.1864.1053" timestamp="1583411572804" />
+    <state width="1818" height="218" key="GridCell.Tab.0.center" timestamp="1583411572804">
       <screen x="56" y="27" width="1864" height="1053" />
     </state>
-    <state width="1818" height="275" key="GridCell.Tab.0.center/56.27.1864.1053@56.27.1864.1053" timestamp="1583201065484" />
-    <state width="1818" height="275" key="GridCell.Tab.0.left" timestamp="1583201065484">
+    <state width="1818" height="218" key="GridCell.Tab.0.center/56.27.1864.1053@56.27.1864.1053" timestamp="1583411572804" />
+    <state width="1818" height="218" key="GridCell.Tab.0.left" timestamp="1583411572803">
       <screen x="56" y="27" width="1864" height="1053" />
     </state>
-    <state width="1818" height="275" key="GridCell.Tab.0.left/56.27.1864.1053@56.27.1864.1053" timestamp="1583201065484" />
-    <state width="1818" height="275" key="GridCell.Tab.0.right" timestamp="1583201065484">
+    <state width="1818" height="218" key="GridCell.Tab.0.left/56.27.1864.1053@56.27.1864.1053" timestamp="1583411572803" />
+    <state width="1818" height="218" key="GridCell.Tab.0.right" timestamp="1583411572804">
       <screen x="56" y="27" width="1864" height="1053" />
     </state>
-    <state width="1818" height="275" key="GridCell.Tab.0.right/56.27.1864.1053@56.27.1864.1053" timestamp="1583201065484" />
+    <state width="1818" height="218" key="GridCell.Tab.0.right/56.27.1864.1053@56.27.1864.1053" timestamp="1583411572804" />
     <state x="477" y="188" width="1022" height="737" key="SettingsEditor" timestamp="1583192476983">
       <screen x="56" y="27" width="1864" height="1053" />
     </state>
@@ -186,9 +197,9 @@
       <screen x="56" y="27" width="1864" height="1053" />
     </state>
     <state x="297" y="280" width="1372" height="554" key="new project wizard/56.27.1864.1053@56.27.1864.1053" timestamp="1583197141389" />
-    <state x="579" y="259" width="816" height="678" key="search.everywhere.popup" timestamp="1583204379450">
+    <state x="579" y="259" width="816" height="678" key="search.everywhere.popup" timestamp="1583410222988">
       <screen x="56" y="27" width="1864" height="1053" />
     </state>
-    <state x="579" y="259" width="816" height="678" key="search.everywhere.popup/56.27.1864.1053@56.27.1864.1053" timestamp="1583204379450" />
+    <state x="579" y="259" width="816" height="678" key="search.everywhere.popup/56.27.1864.1053@56.27.1864.1053" timestamp="1583410222988" />
   </component>
 </project>

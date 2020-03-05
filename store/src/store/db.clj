@@ -23,3 +23,6 @@
               :db/valueType   :db.type/string
               :db/cardinality :db.cardinality/one
               :db/doc         "cnpj da loja"}])
+
+
+
