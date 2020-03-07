@@ -3,6 +3,8 @@
   (:require [datomic.api :as d]
             [store.db :as db]))
 
+
+
 (defn all-stores []
   (let [conn (db/open)]
     (let [db (d/db conn)]
