@@ -11,6 +11,11 @@
 (defn delete []
   (d/delete-database db-uri))
 
+(defn create-store [name email cnpj]
+  {:store/name  name
+   :store/email email
+   :store/cnpj  cnpj})
+
 (def schema [{:db/ident       :store/name
               :db/valueType   :db.type/string
               :db/cardinality :db.cardinality/one

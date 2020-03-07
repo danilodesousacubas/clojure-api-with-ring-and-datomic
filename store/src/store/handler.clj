@@ -1,11 +1,15 @@
 (ns store.handler
   (:require [compojure.core :refer :all]
             [compojure.route :as route]
-            [ring.middleware.defaults :refer [wrap-defaults site-defaults]]))
+            [store.model :as model]
+            [ring.middleware.json :refer [wrap-json-response wrap-json-body]]))
 
-(defroutes app-routes
+(defroutes all-routes
   (GET "/" [] "Hello World")
+  (GET "/stores" [] (model/all-stores))
   (route/not-found "Not Found"))
 
 (def app
-  (wrap-defaults app-routes site-defaults))
+  (-> all-routes
+      wrap-json-response
+      wrap-json-body))

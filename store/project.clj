@@ -6,6 +6,7 @@
                                    :creds :gpg}}
   :dependencies [[org.clojure/clojure "1.10.0"]
                  [compojure "1.6.1"]
+                 [ring/ring-json "0.4.0"]
                  [ring/ring-defaults "0.3.2"]
                  [com.datomic/datomic-pro "0.9.6045"]]
   :plugins [[lein-ring "0.12.5"]]
