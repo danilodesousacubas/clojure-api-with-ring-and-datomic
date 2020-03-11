@@ -2,7 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="157b1688-af62-4f9b-a107-06ff3661ac7d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Leiningen__cheshire_5_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Leiningen__ring_ring_json_0_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__cheshire_5_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_fasterxml_jackson_core_jackson_core_2_9_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_fasterxml_jackson_core_jackson_core_2_5_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_fasterxml_jackson_dataformat_jackson_dataformat_cbor_2_9_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_fasterxml_jackson_dataformat_jackson_dataformat_cbor_2_5_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_fasterxml_jackson_dataformat_jackson_dataformat_smile_2_9_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Leiningen__com_fasterxml_jackson_dataformat_jackson_dataformat_smile_2_5_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/store.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/store.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/core.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/core.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/db.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/db.clj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/handler.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/handler.clj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/load_data.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/load_data.clj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/model.clj" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/model.clj" afterDir="false" />
     </list>
@@ -38,19 +48,20 @@
   <component name="PropertiesComponent">
     <property name="GoToNamespace.includeLibraries" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="cursive.last.file.extension./home/danilo/Development/Source/clojure/clojure-api-with-ring-and-datomic/store/src" value="clj" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="Leiningen" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/store" />
     </key>
   </component>
-  <component name="ReplState" timestamp="1583608267376">{:repl-history {:ide [], :local [{:command &quot;(open-connection )&quot;, :offset 18, :ns &quot;store.db&quot;} {:command &quot;(open-connection)&quot;, :offset 17, :ns &quot;store.db&quot;} {:command &quot;(pprint (d/create-database db-uri))&quot;, :offset 35, :ns &quot;store.db&quot;} {:command &quot;(println db-uri         )&quot;, :offset 25, :ns &quot;store.core&quot;} {:command &quot;(require 'store.db)\n&quot;, :offset 19, :ns &quot;store.core&quot;} {:command &quot;(println db-uri)&quot;, :offset 16, :ns &quot;store.core&quot;} {:command &quot;(require store.db)\n&quot;, :offset 18, :ns &quot;store.core&quot;} {:command &quot;(pprint (db/open-connection))&quot;, :offset 29, :ns &quot;store.core&quot;} {:command &quot;(d/create-database \&quot;datomic:dev//localhost:4334/hello\&quot;)&quot;, :offset 55, :ns &quot;store.db&quot;} {:command &quot;(d/create-database \&quot;datomic:dev//localhost:4334/store\&quot;)&quot;, :offset 55, :ns &quot;store.db&quot;} {:command &quot;(pprint (d/create-database \&quot;datomic:dev//localhost:4334/store\&quot;))&quot;, :offset 64, :ns &quot;store.db&quot;} {:command &quot;(pprint (model/create-store \&quot;store1\&quot;, \&quot;store@gmail\&quot;  \&quot;cnpj\&quot;))&quot;, :offset 61, :ns &quot;store.core&quot;} {:command &quot;(d/transact conn db/schema)&quot;, :offset 27, :ns &quot;store.core&quot;} {:command &quot;(let [store (model/create-store \&quot;store1\&quot;, \&quot;store@gmail\&quot; \&quot;1234\&quot;)\n      store (model/create-store \&quot;store2\&quot;, \&quot;store2@gmail\&quot; \&quot;12345\&quot;)]\n  (d/transact conn [store]))&quot;, :offset 159, :ns &quot;store.core&quot;}], :remote []}}</component>
+  <component name="ReplState" timestamp="1583894204626">{:repl-history {:ide [], :local [{:command &quot;(open-connection )&quot;, :offset 18, :ns &quot;store.db&quot;} {:command &quot;(open-connection)&quot;, :offset 17, :ns &quot;store.db&quot;} {:command &quot;(pprint (d/create-database db-uri))&quot;, :offset 35, :ns &quot;store.db&quot;} {:command &quot;(println db-uri         )&quot;, :offset 25, :ns &quot;store.core&quot;} {:command &quot;(require 'store.db)\n&quot;, :offset 19, :ns &quot;store.core&quot;} {:command &quot;(println db-uri)&quot;, :offset 16, :ns &quot;store.core&quot;} {:command &quot;(require store.db)\n&quot;, :offset 18, :ns &quot;store.core&quot;} {:command &quot;(pprint (db/open-connection))&quot;, :offset 29, :ns &quot;store.core&quot;} {:command &quot;(d/create-database \&quot;datomic:dev//localhost:4334/hello\&quot;)&quot;, :offset 55, :ns &quot;store.db&quot;} {:command &quot;(d/create-database \&quot;datomic:dev//localhost:4334/store\&quot;)&quot;, :offset 55, :ns &quot;store.db&quot;} {:command &quot;(pprint (d/create-database \&quot;datomic:dev//localhost:4334/store\&quot;))&quot;, :offset 64, :ns &quot;store.db&quot;} {:command &quot;(pprint (model/create-store \&quot;store1\&quot;, \&quot;store@gmail\&quot;  \&quot;cnpj\&quot;))&quot;, :offset 61, :ns &quot;store.core&quot;} {:command &quot;(d/transact conn db/schema)&quot;, :offset 27, :ns &quot;store.core&quot;} {:command &quot;(let [store (model/create-store \&quot;store1\&quot;, \&quot;store@gmail\&quot; \&quot;1234\&quot;)\n      store (model/create-store \&quot;store2\&quot;, \&quot;store2@gmail\&quot; \&quot;12345\&quot;)]\n  (d/transact conn [store]))&quot;, :offset 159, :ns &quot;store.core&quot;}], :remote []}}</component>
   <component name="RunManager" selected="Clojure REPL.REPL for store">
     <configuration name="REPL for store" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false" temporary="true">
       <module name="store" />
@@ -185,10 +196,10 @@
       <screen x="56" y="27" width="1864" height="1053" />
     </state>
     <state width="1818" height="218" key="GridCell.Tab.0.right/56.27.1864.1053@56.27.1864.1053" timestamp="1583411572804" />
-    <state x="477" y="188" width="1022" height="737" key="SettingsEditor" timestamp="1583192476983">
+    <state x="477" y="188" width="1022" height="737" key="SettingsEditor" timestamp="1583890622084">
       <screen x="56" y="27" width="1864" height="1053" />
     </state>
-    <state x="477" y="188" width="1022" height="737" key="SettingsEditor/56.27.1864.1053@56.27.1864.1053" timestamp="1583192476983" />
+    <state x="477" y="188" width="1022" height="737" key="SettingsEditor/56.27.1864.1053@56.27.1864.1053" timestamp="1583890622084" />
     <state x="644" y="381" key="com.intellij.ide.util.TipDialog" timestamp="1583191586636">
       <screen x="56" y="27" width="1864" height="1053" />
     </state>

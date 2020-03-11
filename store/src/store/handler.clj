@@ -6,7 +6,7 @@
 
 (defroutes all-routes
   (GET "/" [] "Hello World")
-  (GET "/stores" [] (model/all-stores))
+  (GET "/stores" [] (model/m))
   (route/not-found "Not Found"))
 
 (def app
