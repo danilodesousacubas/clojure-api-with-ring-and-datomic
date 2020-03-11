@@ -48,3 +48,7 @@
          :in $ ?name-a-ser-buscado
          :where [?entidade :store/name ?name-a-ser-buscado]]
        db name))
+
+(defn tall-store-entity [db]
+  (d/q '[:find (pull ?entidade [*])
+         :where [?entidade :store/name]] db))

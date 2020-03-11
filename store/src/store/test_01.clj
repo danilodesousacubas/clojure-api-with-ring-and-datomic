@@ -52,7 +52,7 @@
 
 (def conn (db/open))
 (def db (d/db conn))
-(all-stores)
+
 
 (d/transact conn [[:db/add 17592186045421 :store/name "BLA"]])
 (d/transact conn [[:db/retract 17592186045421 :store/name "BLA"]] )
