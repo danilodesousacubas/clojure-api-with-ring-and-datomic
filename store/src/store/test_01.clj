@@ -1,4 +1,4 @@
-(ns store.aula-01
+(ns store.test-01
   (:use clojure.pprint)
   (:require [datomic.api :as d]
             [store.db :as db]))
@@ -56,3 +56,11 @@
 
 (d/transact conn [[:db/add 17592186045421 :store/name "BLA"]])
 (d/transact conn [[:db/retract 17592186045421 :store/name "BLA"]] )
+
+(def db (d/db conn))
+(pprint (db/todas-as-lojas-por-nome db "loja1Centro"))
+
+(pprint (d/q '[:find ?name ?email ?cnpj
+               :where [?e :store/name ?name]
+               [?e :store/email ?email]
+               [?e :store/cnpj ?cnpj]] db))

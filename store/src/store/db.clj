@@ -31,6 +31,14 @@
 (defn schema-create [connection]
   (d/transact connection schema))
 
+(defn all-stores []
+  (let [conn (db/open)]
+    (let [db (d/db conn)]
+      (d/q '[:find ?name ?email ?cnpj
+             :where [?e :store/name ?name]
+             [?e :store/email ?email]
+             [?e :store/cnpj ?cnpj]] db))))
+
 (defn todas-as-lojas [db]
   (d/q '[:find ?entidade
          :where [?entidade :store/name]] db))
@@ -40,15 +48,3 @@
          :in $ ?name-a-ser-buscado
          :where [?entidade :store/name ?name-a-ser-buscado]]
        db name))
-
-;(let [store1 (db/create-store "a1" "a2" "a3")
-;     store2 (db/create-store "b1" "b2" "b3")]
-; (d/transact conn [store1, store2]))
-
-
-;(let [store1 (create-store "hut1" "hut1" "hut1")
-;      resultado @(d/transact connection [store1])]
-;  (pprint resultado))
-
-
-
